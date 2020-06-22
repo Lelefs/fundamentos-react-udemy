@@ -1,10 +1,15 @@
 import React from 'react';
-import If from './If';
+import If, { Else } from './If';
 
 export default ({ usuario }) => {
   return (
-    <If test={usuario && usuario.nome}>
-      Seja bem vindo <strong>{usuario.nome}</strong>!
-    </If>
+    <div>
+      <If test={usuario && usuario.nome}>
+        Seja bem vindo <strong>{usuario.nome}</strong>!
+        <Else>
+          Seja bem vindo <strong>amigão</strong>!
+        </Else>
+      </If>
+    </div>
   );
 };

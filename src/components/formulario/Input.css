@@ -1,0 +1,14 @@
+.Input input {
+  font-size: 1.4rem;
+  width: 100%;
+}
+
+.Input input + input {
+  margin-top: 10px;
+}
+
+.Input input:read-only {
+  opacity: 0.6;
+  cursor: default;
+  outline: 0;
+}

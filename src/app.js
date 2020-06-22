@@ -5,12 +5,16 @@ import './App.css';
 import Aleatorio from './components/basicos/Aleatorio';
 import Card from './components/layout/Card';
 import ComParametro from './components/basicos/ComParametro';
-import ParOuImpar from './components/condicional/ParOuImpar';
-import ListaAlunos from './components/repeticao/ListaAlunos';
-import TabelaProdutos from './components/repeticao/TabelaProdutos';
+import Contador from './components/contador/Contador';
+import DiretaPai from './components/comunicacao/DiretaPai';
 import Familia from './components/basicos/Familia';
 import FamiliaMembro from './components/basicos/FamiliaMembro';
+import IndiretaPai from './components/comunicacao/IndiretaPai.js';
+import Input from './components/formulario/Input';
+import ListaAlunos from './components/repeticao/ListaAlunos';
+import ParOuImpar from './components/condicional/ParOuImpar';
 import Primeiro from './components/basicos/Primeiro';
+import TabelaProdutos from './components/repeticao/TabelaProdutos';
 import UsuarioInfo from './components/condicional/UsuarioInfo';
 
 export default () => (
@@ -18,6 +22,22 @@ export default () => (
     <h1>Fundamentos React (Arrow)</h1>
 
     <div className="cards">
+      <Card titulo="#12 - Contador" color="#424242">
+        <Contador numeroInicial={10} />
+      </Card>
+
+      <Card titulo="#11 - Componente controlado (Input)" color="#E45F56">
+        <Input />
+      </Card>
+
+      <Card titulo="#10 - Comunicação indireta" color="#8BAD39">
+        <IndiretaPai />
+      </Card>
+
+      <Card titulo="#09 - Comunicação direta" color="#59323C">
+        <DiretaPai />
+      </Card>
+
       <Card titulo="#08 - Renderização Condicional" color="#982395">
         <ParOuImpar numero={11} />
         <UsuarioInfo usuario={{ nome: 'Leandro' }} />
