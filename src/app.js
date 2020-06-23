@@ -12,6 +12,7 @@ import FamiliaMembro from './components/basicos/FamiliaMembro';
 import IndiretaPai from './components/comunicacao/IndiretaPai.js';
 import Input from './components/formulario/Input';
 import ListaAlunos from './components/repeticao/ListaAlunos';
+import Mega from './components/mega/Mega';
 import ParOuImpar from './components/condicional/ParOuImpar';
 import Primeiro from './components/basicos/Primeiro';
 import TabelaProdutos from './components/repeticao/TabelaProdutos';
@@ -22,6 +23,10 @@ export default () => (
     <h1>Fundamentos React (Arrow)</h1>
 
     <div className="cards">
+      <Card titulo="#13 - Desafio Megasena" color="#B9006E">
+        <Mega qtd={6} />
+      </Card>
+
       <Card titulo="#12 - Contador" color="#424242">
         <Contador numeroInicial={10} />
       </Card>
